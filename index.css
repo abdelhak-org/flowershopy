@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 16px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 80vw;
+  min-height: 100vh;
+  margin: 0rem auto;
+  padding: 0rem 1rem;
+  border: 0.1rem solid #333;
+}
+
+.container .nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem auto;
+}
+.container .nav .logo span {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.container .nav ul {
+  list-style: none;
+}
+.container .nav ul li {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.container .nav ul li:first-child {
+  background-color: red;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.container .nav ul li:last-child {
+  background-color: red;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+.container .nav ul li:hover {
+  transform: translateX(5px);
+}
+
+.container {
+  background-color: #e1e1e1;
+}
+.container .intro-section {
+  margin-top: 2rem;
+  background-color: #e1e1e1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .intro-section .intro-left {
+  width: 48%;
+  height: 100vh;
+  border: none;
+  box-shadow: none;
+}
+.container .intro-section .intro-left h1 {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 32px;
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: justify;
+  margin: 3rem auto 1rem;
+  letter-spacing: 0.15rem;
+  line-height: 2rem;
+}
+.container .intro-section .intro-left h1 span {
+  color: rgb(237, 45, 112);
+}
+.container .intro-section .intro-left p {
+  color: rgba(51, 51, 51, 0.91);
+  font-family: "Roboto", sans-serif;
+  width: 20rem;
+  margin: 0rem auto;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+.container .intro-section .intro-right {
+  width: 48%;
+  height: 100vh;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+.container .intro-section .intro-right img {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

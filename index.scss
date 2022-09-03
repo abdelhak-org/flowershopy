@@ -1,0 +1,132 @@
+$mainFont:'Roboto', sans-serif;
+$primaryColor:#333;
+$buttonColor:rgb(237, 45, 112);
+$secondaryColor:rgba(51, 51, 51, 0.91);
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size:16px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+@mixin flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin card($param1,$param2) {
+    width:$param1;
+    height:$param2;
+   
+}
+.container{
+   max-width: 80vw;
+    min-height: 100vh;
+    margin: 0rem auto;
+    padding: 0rem 1rem;
+    border: 0.1rem solid #333;
+
+}
+.container{
+    .nav{
+     @include flex;
+     margin: 0rem auto;
+     .logo{
+        span{
+            font-size: 16px ;
+            font-weight: 600;
+            font-family: $mainFont;
+
+        }
+     }
+     ul{
+        list-style: none;
+
+        li{
+            display: inline-block;
+            font-size: 0.8rem;
+            font-family: $mainFont;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            
+            &:first-child{
+                background-color: red;
+                padding: 1rem 0.5rem;
+                border-radius: 0.5rem;
+            }
+            
+            &:last-child{
+                background-color: red;
+                padding: 0.5rem 2rem;
+                border-radius: 0.5rem;
+
+            }
+            &:hover {
+                transform: translateX(5px);
+            }
+
+        }
+        
+     }
+
+
+    }
+}
+
+.container {
+    background-color: #e1e1e1;
+    .intro-section{
+        margin-top: 2rem;
+        background-color: #e1e1e1;
+        @include flex;
+        .intro-left{
+            @include card(48%,100vh);
+            border: none;
+            box-shadow: none;
+            h1{
+                font-family: $mainFont;
+                color: $primaryColor;
+                font-size: 32px;
+                font-weight:400 ;
+                width:fit-content;
+                text-align: justify;
+                margin: 3rem auto 1rem;
+                letter-spacing: 0.15rem;
+                line-height: 2rem;
+                span{
+                    color: $buttonColor;
+                }
+            }
+            p{
+             color: $secondaryColor;
+             font-family: $mainFont;
+             width:20rem;
+             margin: 0rem auto;
+             letter-spacing: 0.1rem;
+             line-height: 1.5rem;
+             padding-left: 1rem;
+            }
+        }
+        .intro-right{
+            @include card(48%,100vh);
+            border: none;
+            box-shadow: none;
+            overflow: hidden;
+            img{
+                width: 100%;
+
+
+            }
+        }
+
+    }
+}
