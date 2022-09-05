@@ -10,12 +10,31 @@ body {
   min-height: 100vh;
 }
 
+.scroll-btn {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: bold;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+.space-arround, .container .discount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .container {
   max-width: 80vw;
   min-height: 100vh;
   margin: 0rem auto;
   padding: 0rem 1rem;
-  border: 0.1rem solid #333;
+  border: 0.1rem solid rgba(51, 51, 51, 0.354);
 }
 
 .container .nav {
@@ -62,7 +81,6 @@ body {
 }
 .container .intro-section {
   margin-top: 2rem;
-  background-color: #e1e1e1;
   width: 100%;
   height: auto;
   display: flex;
@@ -71,7 +89,7 @@ body {
 }
 .container .intro-section .intro-left {
   width: 48%;
-  height: 100vh;
+  height: 80vh;
   border: none;
   box-shadow: none;
 }
@@ -102,11 +120,174 @@ body {
 }
 .container .intro-section .intro-right {
   width: 48%;
-  height: 100vh;
+  height: 80vh;
   border: none;
   box-shadow: none;
   overflow: hidden;
 }
 .container .intro-section .intro-right img {
   width: 100%;
+}
+
+.container {
+  padding: 0rem;
+}
+.container .about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.container .about .about-left {
+  width: 45%;
+  height: 100vh;
+  border: 1px solid white;
+}
+.container .about .about-left h2 {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 3rem auto 1rem;
+  text-align: left;
+  width: 20rem;
+}
+.container .about .about-left p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  color: rgba(51, 51, 51, 0.91);
+  max-width: 20rem;
+  margin: 1rem auto;
+  letter-spacing: 0.1rem;
+}
+.container .about .about-left button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(237, 45, 112);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  display: block;
+  margin: 2rem auto;
+}
+.container .about .about-right {
+  width: 45%;
+  height: 100vh;
+  overflow: hidden;
+}
+.container .about .about-right img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+.container .products {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.container .products .card {
+  width: 24%;
+  line-height: 1.5rem;
+  box-shadow: 0px 0px 5px #333333;
+  padding-bottom: 1rem;
+}
+.container .products .card img {
+  width: 100%;
+}
+.container .products .card h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+.container .products .card .icons {
+  text-align: center;
+  margin: 0.8rem auto;
+  color: #ffd900;
+}
+.container .products .card .price {
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+}
+.container .products .card .price span {
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+.container .products .card .price span:first-child {
+  color: red;
+  text-decoration: line-through;
+}
+.container .products .card .addtocard {
+  width: 100%;
+  margin: 1.5rem auto;
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+}
+.container .products .card .addtocard span {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.container .products .card .addtocard span:first-child {
+  color: red;
+}
+
+.container .discount {
+  width: 100%;
+  min-height: 14rem;
+  background-color: #ffffff;
+}
+.container .discount .discount-left {
+  width: 45%;
+  height: 10rem;
+  background-color: #ffd900;
+  overflow: hidden;
+  position: relative;
+}
+.container .discount .discount-left img {
+  width: 100%;
+}
+.container .discount .discount-left p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  padding: 3rem 2rem;
+}
+.container .discount .discount-right {
+  width: 45%;
+  height: 10rem;
+  background-color: red;
+  overflow: hidden;
+  position: relative;
+}
+.container .discount .discount-right img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+.container .discount .discount-right p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  text-align: right;
+  padding: 3rem 2rem;
+  text-shadow: 0px 0px 5px #ffffff;
 }/*# sourceMappingURL=index.css.map */
