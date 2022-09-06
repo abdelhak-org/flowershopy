@@ -13,7 +13,7 @@ body {
 .scroll-btn {
   padding: 8px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #f861be;
   color: white;
   font-size: bold;
   position: fixed;
@@ -21,20 +21,22 @@ body {
   bottom: 0px;
   cursor: pointer;
   outline: none;
+  border: none;
+  font-weight: 600;
 }
 
-.space-arround, .container .ourblog, .container .discount {
+.space-arround, .container .ourblog .blog-overlay, .container .discount {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .container {
-  max-width: 80vw;
+  max-width: 90vw;
   min-height: 100vh;
   margin: 0rem auto;
   padding: 0rem 1rem;
-  border: 0.1rem solid rgba(51, 51, 51, 0.354);
+  border: 0.1rem solid rgba(51, 51, 51, 0.906);
 }
 
 .container .nav {
@@ -44,6 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0rem auto;
+  padding: 0rem 1rem;
 }
 .container .nav .logo span {
   font-size: 16px;
@@ -77,7 +80,7 @@ body {
 }
 
 .container .intro-section {
-  margin-top: 2rem;
+  margin: 3rem auto;
   width: 100%;
   height: auto;
   display: flex;
@@ -126,10 +129,9 @@ body {
   width: 100%;
 }
 
-.container {
-  padding: 0rem;
-}
 .container .about {
+  width: 100%;
+  min-height: 100vh;
   width: 100%;
   height: auto;
   display: flex;
@@ -188,8 +190,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  padding: 3rem;
+  min-height: 100vh;
+  margin-top: 2rem;
+  padding: 3rem auto;
   font-family: "Roboto", sans-serif;
 }
 .container .products .card {
@@ -243,12 +246,12 @@ body {
 
 .container .discount {
   width: 100%;
-  min-height: 14rem;
+  min-height: 18rem;
   background-color: #ffffff;
 }
 .container .discount .discount-left {
   width: 45%;
-  height: 10rem;
+  height: 12rem;
   background-color: #ffd900;
   overflow: hidden;
   position: relative;
@@ -264,10 +267,11 @@ body {
   left: 0px;
   z-index: 100;
   padding: 3rem 2rem;
+  text-shadow: 0px 0px 10px #ffffff;
 }
 .container .discount .discount-right {
   width: 45%;
-  height: 10rem;
+  height: 12rem;
   background-color: red;
   overflow: hidden;
   position: relative;
@@ -286,25 +290,33 @@ body {
   z-index: 100;
   text-align: right;
   padding: 3rem 2rem;
-  text-shadow: 0px 0px 5px #ffffff;
+  text-shadow: 0px 0px 10px #ffffff;
 }
 
 .container .ourblog {
-  margin-top: 5rem;
+  width: 100%;
+  margin: 5rem auto;
+}
+.container .ourblog h2 {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.container .ourblog .blog-overlay {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  background-color: #ffffff;
 }
-.container .blog-card {
+.container .ourblog .blog-card {
   width: 30%;
   min-height: 15rem;
   background-color: #ffffff;
 }
-.container .blog-card img {
+.container .ourblog .blog-card img {
   width: 100%;
 }
-.container .blog-card h3 {
+.container .ourblog .blog-card h3 {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
@@ -313,11 +325,56 @@ body {
   margin: 1rem auto;
   padding: 0rem 1rem;
 }
-.container .blog-card p {
+.container .ourblog .blog-card p {
   font-family: "Roboto", sans-serif;
   color: rgba(51, 51, 51, 0.91);
   font-size: 1rem;
   text-align: center;
   line-height: 1.4rem;
   padding: 1rem;
+}
+.container .subscribe {
+  width: 100%;
+  min-height: 10rem;
+  background-color: #f7d61c;
+  padding: 1rem;
+}
+.container .subscribe h4 {
+  text-align: center;
+  font-weight: 500;
+  margin: 1rem auto 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+.container .subscribe p {
+  color: rgba(51, 51, 51, 0.91);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.container .subscribe .subscribe-control {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+}
+.container .subscribe .subscribe-control .inpt {
+  min-width: 20rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  margin-right: 0rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: none;
+}
+.container .subscribe .subscribe-control .btn {
+  padding: 0.4rem;
+}
+
+.container .footer {
+  width: 100%;
+  min-height: 10rem;
+  background-color: #333;
 }/*# sourceMappingURL=index.css.map */
