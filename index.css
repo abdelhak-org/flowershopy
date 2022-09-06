@@ -32,11 +32,10 @@ body {
 }
 
 .container {
-  max-width: 90vw;
+  max-width: 82vw;
   min-height: 100vh;
   margin: 0rem auto;
   padding: 0rem 1rem;
-  border: 0.1rem solid rgba(51, 51, 51, 0.906);
 }
 
 .container .nav {

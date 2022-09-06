@@ -13,18 +13,18 @@
     
     <div class="container">
 
-        <nav class="nav">
+        <nav class="nav" id="home">
           <div class="logo"> 
             <span> FlowerShopy</span>
           </div>
           <div class="navbar">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Product</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Sign Up</li>
+                <li data-link="home">Home</li>
+                <li data-link="about">About</li>
+                <li data-link="products">Products</li>
+                <li data-link="blog">Blog</li>
+                <li data-link="contact" >Contact Us</li>
+                <li data-link="signup">Sign Up</li>
             </ul>
           </div>
 
@@ -34,7 +34,7 @@
         <section class="intro-section">
 
             <div class="intro-left">
-             <h1> Fresh <span>Flowers</span> & <br>
+             <h1> Fresh <span>Flowers</span> & <br> 
              Perfct  <span>Gift</span> For <br>
              Your <span>Loved</span> One .
             </h1>
@@ -44,9 +44,10 @@
             <div class="intro-right">
                 <img src="./assets/Exotic_Flowers.png" alt="image right">
             </div>
-            <button class="scroll-btn">Top</button>
+            <button class="scroll-btn"><i class="fa-solid fa-jet-fighter-up"></i></button>
         </section>
-        <section class="about">
+
+        <section class="about" id="about">
 
             <div class="about-left">
               <h2> About Us </h2>
@@ -66,7 +67,7 @@
 
         </section>
 
-        <section class="products">
+        <section class="products" id="products">
         <!-- start card-->
           <div class="card">
           <img src="./assets/productone.jpg" alt="img">
@@ -169,7 +170,7 @@
 
         </section>
 
-        <section class="ourblog">
+        <section class="ourblog" id="blog">
 
           <h2> Our Blogger </h2>
           <div class="blog-overlay">
