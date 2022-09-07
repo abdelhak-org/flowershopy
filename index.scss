@@ -1,7 +1,9 @@
+// variables 
 $mainFont:'Roboto', sans-serif;
 $primaryColor:#333;
 $buttonColor:rgb(237, 45, 112);
 $secondaryColor:rgba(51, 51, 51, 0.91);
+// main parameter
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -12,6 +14,8 @@ body{
     width: 100vw;
     min-height: 100vh;
 }
+
+// scroll to top button
 .scroll-btn{
     padding: 8px;
     border-radius: 50%;
@@ -26,6 +30,7 @@ body{
     border: none;
     font-weight: 600;
 }
+//  scss declarations
 .space-arround{
     display: flex;
     justify-content: space-around;
@@ -44,12 +49,13 @@ body{
     height:$param2;
    
 }
+// main container
 .container {
-    max-width: 82vw;
+    max-width: 80vw;
     min-height: 100vh;
     margin: 0rem auto;
     padding: 0rem 1rem;
-
+ // nav section
 }
 .container{
     .nav{
@@ -58,7 +64,7 @@ body{
      padding: 0rem 1rem;
      .logo{
         span{
-            font-size: 16px ;
+            font-size: 1rem ;
             font-weight: 600;
             font-family: $mainFont;
             
@@ -101,7 +107,7 @@ body{
 
     }
 }
-
+// intro section
 .container {
     .intro-section{
         margin: 3rem auto;
@@ -148,7 +154,7 @@ body{
 
     }
 }
-
+ // about section
 .container{
     .about{
         width: 100%;
@@ -200,7 +206,7 @@ body{
         }
     }
 }
-
+  // product section
 .container {
     .products{
         @include flex;
@@ -261,7 +267,7 @@ body{
         }
     }
 }
-
+ // discount section
 .container{
     .discount {
        @extend .space-arround;
@@ -315,7 +321,7 @@ body{
 
     }
 }
-
+ // blog section
 .container {
     .ourblog{
         width:100% ;
@@ -404,7 +410,7 @@ body{
 
 }
 
-
+// footer section
 .container {
     .footer {
         width: 100%;
